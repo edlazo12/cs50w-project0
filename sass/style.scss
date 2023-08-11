@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&family=Raleway&family=Shadows+Into+Light&display=swap');
+
+//Variables de fuentes
+$architects-daughter: 'Architects Daughter', cursive;
+$montserrat: 'Montserrat', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$shadows-into-light: 'Shadows Into Light', cursive;
+
+//Variables de colores
+$color-base: red ;
+$color-github: #211f1f;
+$color-facebook: #3b5998;
+
+//herencia
+%margen-superior {
+    margin-top: 5px;
+}
+
+%elemento-centrado {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%margen-inferior {
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: $color-base;
+
+    //1er selector: clase
+    .fa-lightbulb {
+        color: orange;
+    }
+
+    .fa-github {
+        color: $color-github;
+    }
+
+    .fa-facebook-square {
+        color:$color-facebook;
+    }
+
+    .fa-envelope {
+        color: black;
+    }
+
+    footer {
+        margin-top: 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: $raleway;
+        @extend %margen-superior;
+        @extend %margen-inferior;
+    }
+
+    hr {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-family: $montserrat;
+        font-size: 16px;
+    }
+
+    //2do selector: last-child
+    p:last-child {
+        @extend %margen-inferior;
+    }
+
+    //3er selector: hover
+    img:hover {
+        box-shadow: 0 0 5px 5px rgba(3, 48, 63, 0.5);
+    }
+
+    //4to selector: nth-child
+    img:nth-child(1)
+    {
+        border-radius: 60%;
+    }
+
+    input {
+        font-family: $montserrat;
+    }
+
+    label {
+        font-family: $raleway;
+    }
+
+    li {
+        font-family: $montserrat;
+    }
+
+    nav {
+        @extend %margen-inferior;
+    }
+
+    small {
+        font-family: $montserrat;
+    }
+
+    th {
+        font-family: $raleway;
+    }
+
+    td {
+        font-family: $montserrat;
+    }
+
+    //5to selector: id
+    #imagen-principal {
+        @extend %elemento-centrado;
+
+        width: 150px;
+        height: 150px;
+
+        display: block;
+        margin-top: 20px;
+    }
+
+    main {
+        h1 {
+            @extend %margen-inferior;
+        }
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .list-group-item {
+        background-color: $color-base;
+    }
+
+    //Media query
+    @media only screen and (max-width: 768px) {
+        [class*="col-"]
+        {
+          width: 100%;
+        }
+    }
+}

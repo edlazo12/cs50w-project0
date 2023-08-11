@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&family=Raleway&family=Shadows+Into+Light&display=swap");
+body h1, body h2, body h3, body h4 {
+  margin-top: 5px;
+}
+
+
+
+body #imagen-principal {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main h1, body nav, body p:last-child, body h1, body h2, body h3, body h4 {
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: snow;
+}
+body .fa-lightbulb {
+  color: red;
+}
+body .fa-github {
+  color: #211f1f;
+}
+
+body .fa-envelope {
+  color: black;
+}
+body footer {
+  margin-top: 15px;
+}
+body h1 {
+  font-size: 36px;
+}
+body h1, body h2, body h3, body h4 {
+  font-family: "Raleway", sans-serif;
+}
+body hr {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+body p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+body img:hover {
+  box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+body img:nth-child(1) {
+  border-radius: 60%;
+}
+body input {
+  font-family: "Montserrat", sans-serif;
+}
+body label {
+  font-family: "Raleway", sans-serif;
+}
+body li {
+  font-family: "Montserrat", sans-serif;
+}
+body small {
+  font-family: "Montserrat", sans-serif;
+}
+body th {
+  font-family: "Raleway", sans-serif;
+}
+body td {
+  font-family: "Montserrat", sans-serif;
+}
+body #imagen-principal {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-top: 20px;
+}
+body .container {
+  max-width: 700px;
+}
+body .list-group-item {
+  background-color: greenyellow;
+}
+@media only screen and (max-width: 768px) {
+  body [class*=col-] {
+    width: 100%;
+  }
+}
+.pie {
+  background-color: #27463D;
+  margin: 1000px;
+  margin: auto;
+  
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+
+}
+
+body {
+  font-family: Arial;
+  line-height: 1.4;
+}
+
+header {
+  min-height: calc(8% - 0.4rem);
+}
+nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #27463D;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+font-size: 20px;
+}
+.txt{
+  text-align: center;
+}
+
+nav a:hover:not(.active) {
+  background-color: #fff;
+  color: #333;
+
+}
+
+#contenido{
+	margin: 1%;
+	text-align: center;
+}
+
+#video{
+  margin: 1%;
+	text-align: center;
+
+}
+
+
+.adaptativa-porcentaje{
+	width:50%;
+}
+.adaptativa-porcentaje-1{
+	width:50%;
+	
+}
+.adaptativa-porcentaje-2{
+	width:50%;
+}
+.adaptativa-porcentaje-3{
+	width:50%;
+}
+div #resumen {
+	display:none
+}
+
+
+
+@media (min-width: 600px) {
+	#resumen{
+	display: block;
+	}
+	body{
+		font-size: 16px;
+		color: red;
+	 } 
+}
+
+@media (min-width: 900px) {
+	body{
+		font-size: 14px;
+		color: black;
+	 } 
+	
+	
+}
+
+
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */
